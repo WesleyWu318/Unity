@@ -1,1 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
+public class Player : MonoBehaviour
+{
+    [SerializeField] float moveSpeed = 5f; // SerializeField 讓 private var 也可以出現在 unity 介面調整
+      Ps. 一般來說只有 public var 可以 
+        Ex. public float moveSpeed = 5f ( 預設為 private )
+        
+    void Start() // 一開始呼叫，只有一次
+    {
+        Debug.Log("error_number"); // 用來除錯
+    }
+
+   
+    void Update() // 不斷重複的執行
+    {
+        transform.Translate(0, moveSpeed*Time.deltaTime, 0); // 往方向向量 (0, 5f, 0) 的方向移動
+          Ps. Time.daltaTime => 表示 Update() 函數執行的間隔 ( 每台電腦執行的次數不同 )
+    }
+}
