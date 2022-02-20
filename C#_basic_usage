@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
    
     void Update() // 不斷重複的執行
     {
-        transform.Translate(0, moveSpeed*Time.deltaTime, 0); // 往方向向量 (0, 5f, 0) 的方向移動
+        transform.Translate(0, moveSpeed*Time.deltaTime, 0); // 往方向向量 (0, 5f, 0) 的方向移動 / per run
           Ps. Time.daltaTime => 表示 Update() 函數執行的間隔 ( 每台電腦執行的次數不同 )
     }
 }
