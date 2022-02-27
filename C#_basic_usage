@@ -11,6 +11,13 @@ public class Player : MonoBehaviour
     void Start() // 一開始呼叫，只有一次
     {
         Debug.Log("error_number"); // 用來除錯
+        
+        int a = 10;
+        int b = 4;
+        if(a > b){
+            double num = 1.0f * a / b; // 想要小數點顯示
+            Debug.Log(num);
+        }
     }
 
    
